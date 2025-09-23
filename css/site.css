@@ -1,0 +1,89 @@
+:root{
+    --primary-color: #012450;
+    --secondary-color: #3799C8;
+    --tertiaty-color: #6E8898;
+    --dark-color: #292929;
+    --light-color: #D3D0CB;
+
+}
+
+body{
+    color: var(--dark-color)
+}
+
+nav{
+    background-color: var(--primary-color);
+}
+
+footer{
+    background-color: var(--primary-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--primary-color);
+}
+
+footer{
+    padding-right: 1rem;
+}
+
+footer .social>a{
+    color: var(--light-color);
+    opacity: 0.75;
+}
+
+footer .social>a:hover{
+    color: var(--secondary-color);
+    opacity: 0.90;
+}
+
+.bsicon{
+    background: linear-gradient(to left, rgb(85, 16, 176), rgb(202, 175, 245));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.jsicon{
+    background: linear-gradient(to left, rgb(227, 210, 20), rgb(213, 232, 91));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.htmlicon{
+    background: linear-gradient(to left, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.cssicon{
+    background: linear-gradient(to left,rgb(11,82,214),rgb(153, 168, 197));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.checklist >li i{
+    color: var(--secondary-color);
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+white-space: pre-wrap;
+word-break: break-all;
+word-wrap: break-word;
+}
+
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+}
+
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
