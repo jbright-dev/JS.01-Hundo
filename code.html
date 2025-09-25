@@ -131,9 +131,74 @@ function displayNumbers(numbers){
                 </pre>
             </div>
             <div class="col-lg-4">
-                <p>The Code is structured in one function.</p>
-                <h5>Hello World</h5>
-                <p>Hello World is a function that displays an alert with a message of "Hello World"</p>
+                <p>The Code is structured into three separate functions:
+                    <br>
+                    <br><Strong>1. The Controller Function</Strong> 
+                    <br><Strong>2. The Business Logic Function</Strong> 
+                    <br><Strong>3. The View Function</Strong> 
+                    <br>
+                </p>
+                <h5>The Controller Function</h5>
+                <p>
+                    <strong>The Controller Function</strong> serves as an intermediary that receives user input,
+                    delegates tasks to the business logic layer, and prepares the proper view to be sent back to 
+                    the user.
+                    <br>
+                    <br>
+                    For this application, the controller collects the start and end values from the page via the 
+                    Start Value and End Value input boxes.
+                    <br>
+                    <br>
+                    The values are then validated as proper integers by
+                    using the built-in parsing function in JavaScript. If the numbers are integers, the view is called,
+                    and the data is presented in the UI.
+
+                </p>
+                <br>
+                <br>
+                <h5>The Business Logic Function</h5>
+                <p>
+                    <strong>The Business Logic Function</strong> serves as a set of rules and operations that define what
+                    the application should be doing.
+                    <br>
+                    <br>
+                    For this application, the application declares a variable named "numbers" and assigns it the value of an empty
+                    array.
+                    <br>
+                    <br>
+                    A for loop that iniitialzes a variable named index which is assigned the input start value. As long as 
+                    the index is less than the end value, the index will increment upwards by one.
+                </p>
+                <br>
+                <br>
+                <h5>The View Function</h5>
+                <p>
+                    <strong>The View Function</strong>, in this instance, represents a specific presentation of data or information
+                    to the user.
+                    <br>
+                    <br>
+                    For this application, a variable named templateRows is declared and is assigned the value of an empty string.
+                    <br>
+                    <br>
+                    A for loop iniitialzes a variable named index, which is assigned the value of zero.
+                    As long as the value of the index is less than the length of the numbers array, index will increment upwards by one
+                    <br>
+                    <br>
+                    Within the loop, a variable named className is declared and is assigned the value of "even". A variable named number
+                    is declared and assigned the value of the index of the numbers array.
+                    <br>
+                    <br>
+                    An If Statement indicates if the variable "number" has a modulus that is divisible by two, assign it the className even,
+                    else it is assigned the className odd.
+                    <br>
+                    <br>
+                    The variable templateRows then utilizes a template literal to populate the HTML with the proper class name based 
+                    on the number value.
+                    <br>
+                    <br>
+                    Finally, the document is targeted, and the results ID is located within the inner HTML and is assigned the value of the current
+                    template row.
+                </p>
             </div>
         </div>
     </div>
